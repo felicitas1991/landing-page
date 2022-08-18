@@ -1,0 +1,117 @@
+body{margin: auto;font-family:'Roboto',sans-serif;font-size:28px;color:#fff;font-weight:400;overflow: hidden}
+html,body{height:100%}
+
+/*cargador*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 999;
+  /* makes sure it stays on top */
+}
+
+#status {
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/*section inicio*/
+.inicio{height:100%;background-color:#D1D3C4;position:relative;overflow:hidden;text-align:center;}
+header{background-color:#070909;height:70px;width:100%;position:fixed;top:0;z-index:99}
+img.hamburguesa{position:absolute;right: 20px;top:20px}
+.titulo{position:absolute;left:50%;top:50%;margin-left:-143px;margin-top:-45px}
+h1{color:#fff;text-align:center;margin:0 auto}
+.video{display:inline-block;height:36px;font-size:16px;line-height:36px;padding:0 20px;border-radius:18px;text-decoration:none;text-transform:unset;letter-spacing:1px}
+.video{background-color:#FE654F;color:#fff;}
+.container{margin:0 auto;max-width:980px}
+.circulo{;transition:1s;border-radius:50%;height:70px;width:70px;background-color:#FE654F;color:#fff;border: solid 5px #fff;text-align:center;line-height:70px;position:absolute;left:50%;margin-top:-35px;margin-left:-35px}
+.circulo:hover{transform:rotate(360deg)}
+article.col{background-color:#D1D3C4;margin:2%;height:250px;text-align:center;width:96%;position:relative;}
+article.col:hover{-webkit-box-shadow: 5px 5px 5px 2px rgba(00,00,00,0.2);transform:scale(1.2);z-index:5}
+box-shadow: 5px 5px 5px 2px rgba(00,00,00,0.2);}
+.clear{clear:both}
+h2 {font-family:'Roboto',sans-serif,font-weight:400;color:#FE654F;font-size:28px;text-align:center}
+.clear{clear:both}
+.video1{width:100%;height:550px}
+.mapa{width:100%;height:600px}
+.videofondo{width:100%;height:100%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+
+
+.overlay { height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #fff;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+}
+
+
+
+/*medias queries*/
+@media screen and (min-width:410px) {
+
+	article.col{margin-top:-40px;width:29.33%;float:left;margin:2%;
+
+}

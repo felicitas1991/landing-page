@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Sitio3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="">
+    <meta property="og:image" content=" " >
+    <!-- otras etiquetas meta para Facebook
+   	<meta property="og:url" content=" " >
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=" " >
+    <meta property="og:description" content=" ">
+	-->
+    <link href="favicon.ico" rel="shortcut icon">
+	<link href="css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+</head>
+
+<body>
+<!-- facebook -->	
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+
+	<header>
+		<nav><span onclick="openNav()"><img class="hamburguesa" src="images/btn-abrir.png"></span>
+			<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>	
+			<div class="overlay-content">
+    		<a href="#">About</a>
+   			<a href="#">Services</a>
+    		<a href="#">Clients</a>
+    		<a href="#">Contact</a>
+ 		 	
+ 		 	</div>
+ 		 	
+ 		</div>
+		</nav>
+		
+	</header>
+	<section class="inicio">
+		<div class="titulo">
+		<h1>Titulo Principal</h1>
+		<a data-fancybox href="https://www.youtube.com/watch?time_continue=1&v=iQFOiJMgGIA" class="video animated flash infinite" data-wow-iteration="3"  >Ver video</a>
+  		<video width="640" height="320" controls id="myVideo" style="display:none;">
+        <source src="https://www.youtube.com/watch?time_continue=1&v=iQFOiJMgGIA.mp4" type="video/mp4">
+        
+      	</video>
+		</a>
+		</div>
+		<video id="videofondo" preload autoplay loop muted>
+			<source src="images/oficina.mp4" type="video/mp4">
+		</video>
+		
+	</section>
+	<section class="contenidos">
+		<div class="container ">
+			<h2>Columnas</h2>
+			<article class="col wow fadeIn"  data-wow-delay="1s"><div class="circulo">1</div></article>
+			<article class="col wow fadeIn"  data-wow-delay="2s"><div class="circulo">2</div></article>
+			<article class="col wow fadeIn" data-wow-delay="1s" ><div class="circulo">3</div></article>
+			<div class=clear></div>
+			<h2>Videos</h2>
+			<iframe class="video1" src="https://www.youtube.com/embed/iQFOiJMgGIA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<div class=clear></div>
+			<h2>Google Maps</h2>
+			<iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.07030766678!2d-57.98818987949415!3d-34.920452898762285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa+Plata%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1526933924565" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class=clear></div>
+		</div>
+	</section>
+	<footer> 
+		<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+	</footer>
+	<script type="text/javascript">
+	/* Open */
+	function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+	}
+
+	/* Close */
+	function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+	}
+	</script>
+	<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script> 
+	<script> $(window).on('load', function() { // makes sure the whole site is loaded 
+  $('#status').fadeOut(); // will first fade out the loading animation 
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $('body').delay(350).css({'overflow':'visible'});
+	})</script>
+
+$(isIsosceles)(3,2,1)===>true
+
+
+</body>
+
+</html>
